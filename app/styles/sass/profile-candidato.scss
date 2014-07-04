@@ -1,0 +1,32 @@
+.bloco-proposta {
+  padding: 20px;
+}
+
+.bloco-botoes-votacao {
+  padding: 20px;
+}
+
+
+@media (max-width: 767px) {
+  .bloco-botoes-votacao {
+    padding: 0;
+  }
+
+  .bloco-botoes-votacao .btn-success{
+    float: right;
+  }
+
+  .bloco-proposta {
+    padding-bottom: 20px;
+  }
+}
+
+.bloco-botoes-votacao div {
+  padding: 5px;
+}
+
+.bloco-botoes-votacao button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
