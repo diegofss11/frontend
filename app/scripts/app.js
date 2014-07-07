@@ -7,7 +7,7 @@ angular
     'ngSanitize',
     'ngRoute'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $sceDelegateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -20,4 +20,16 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  
+     $sceDelegateProvider.resourceUrlWhitelist([
+       // Allow same origin resource loads.
+       'self',
+       // Allow loading from our assets domain.  Notice the difference between * and **.
+       'http://api.projetobrasil.org/**'
+     ]);
+
+     // The blacklist overrides the whitelist so the open redirect here is blocked.
+     // $sceDelegateProvider.resourceUrlBlacklist([
+     //   'http://myapp.example.com/clickThru**'
+     // ]);
+   });
