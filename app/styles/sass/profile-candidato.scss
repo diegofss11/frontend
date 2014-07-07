@@ -1,0 +1,130 @@
+@import 'config';
+
+/* Geral */
+.info {
+  padding: 0.4em 0.2em;
+
+  .title{
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #30b786;
+  }
+
+}
+
+.lista-partidos, .lista-formacao {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li{
+    margin-bottom: 0.5em;
+    line-height: 45px;
+  }
+
+  li:first-child{
+    margin-top: 0.3em;
+  }
+
+  .logo-partido {
+    height: 45px;
+    margin-right: 0.6em;
+  }
+
+}
+
+/* Informacoes pessoais */
+.profile-info{
+  .lista-formacao li{
+    line-height: 21px;
+    margin-bottom: 0.9em;
+
+    .formacao-local{
+      font-weight: 600;
+    }
+
+    img{
+      float: left;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  .redes-sociais {
+    list-style: none;
+    padding-left: 0;
+    padding: 0.3em 0 0;
+  }
+
+  .link-rede-social i {
+    font-size: 22px;
+    padding-right: 5px;
+  }
+
+  [class*="fa-facebook"]{
+    color: $azul-facebook;
+  }
+
+  [class*="fa-twitter"]{
+    color: $azul-twitter;
+  }
+
+  [class*="fa-google-plus"]{
+    color: $vermelho-plus;
+  }
+}
+
+/* Propostas */
+
+.numero-candidato{
+  color: $verde-claro;
+  font-weight: 700;
+  float: right;
+}
+
+.bloco-proposta {
+  padding: 20px;
+}
+
+.bloco-botoes-votacao {
+  padding: 20px;
+}
+
+.bloco-botoes-votacao button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.bloco-botoes-votacao div {
+  padding: 5px;
+}
+
+/* Partido */
+.politics{
+
+  .politic-logo{
+    text-align: center;
+    
+    img{
+      max-width: 150px;
+      margin-bottom: 1em;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .bloco-botoes-votacao {
+    padding: 0;
+  }
+
+  .bloco-botoes-votacao .btn-success{
+    float: right;
+  }
+
+  .bloco-proposta {
+    padding-bottom: 20px;
+  }
+}
