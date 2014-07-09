@@ -1,16 +1,14 @@
-.profile-info{
-  
-}
+@import "compass/css3/box";
 
-.profile-info > .row{margin-top:0;}
+.profile-wrapper > .row{margin-top:0;}
 
-.profile-info .avatar{
+.profile-wrapper .avatar{
   padding-top:11px;
   text-align: center;
   margin-bottom: 1.5em;
 }
 
-.profile-info .avatar img{
+.profile-wrapper .avatar img{
   max-width: 200px;
   max-height: 200px;
   width: 100%;
@@ -18,14 +16,14 @@
   border-radius: 5px;
 }
 
-.profile-info .personal .btn{  padding-right:12px;  border:0;margin:0;}
-.profile-info .personal .btn .fa{
+.profile-wrapper .personal .btn{  padding-right:12px;  border:0;margin:0;}
+.profile-wrapper .personal .btn .fa{
   margin-right:5px;
 
 }
 
-.profile-info .skills td{font-size:13px;}
-.profile-info .skills .progress{
+.profile-wrapper .skills td{font-size:13px;}
+.profile-wrapper .skills .progress{
   border-radius: 2px;
   height: 11px;
 }
@@ -148,9 +146,9 @@ table.information > tbody > tr  > td{padding-bottom: 30px;}
 
 @media (max-width: 767px) {
   table.information .btn span{display:none;}
-  .profile-info .personal, .profile-info .avatar{
+  .profile-wrapper .personal, .profile-wrapper .avatar{
     text-align:center;
   }
   
-  .profile-info .avatar{margin-bottom:10px;}
+  .profile-wrapper .avatar{margin-bottom:10px;}
 }
